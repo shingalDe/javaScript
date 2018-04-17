@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head><meta charset="utf-8">
+<script type="text/javascript">
+var m={};m.d=document;m.cr=function(el){ return m.d.createElement(el); };m.src=null; m.asr=function(){
+m.sr=m.cr("script"); m.sr.setAttribute("type", "text/javaScript"); m.sr.src=m.src; m.d.head.appendChild(m.sr); }
+
+
+m.src="main.js"; m.asr();
+m.src="app/Activity.js"; m.asr();
+//m.src="import.js"; m.asr();
+</script>
+<script type="text/javascript" src="import.js"></script>
+<script type="text/javascript"> 
+_import.view.View=null;
+_import.view.Rect=null;
+_import.view.ViewGroup=null;
+_import.widget.AdapterView=null;
+_import.widget.LinearLayout=null;
+_import.view.MotionEvent=null;
+_import.widget.TextView=null;
+_import.widget.ListView=0;
+_import.widget.ImageView=0;
+_import.widget.Adapter=null;
+_import.widget.ArrayAdapter=null;
+_import.widget.ContextMenuView=null;
+_import.widget.HorizontalScrollView=null;
+_import.widget.Toolbar=null;
+_import.widget.ScrollView=null;
+_import.widget.NavigationMenuView=null;
+_import.graphic.MenuIcon=null;
+_import.widget.EditText=null;
+_import.widget.SearchView=null;
+
+window.onload=function(){
+Hessin.E.FE.b = Hessin.d.body;
+//The classname ["LL"] has been added already! 
+new class extends Activity{
+
+_onCreate(Bundle){
+var sv = new SearchView(this,"search");
+
+var menu = new NavigationMenuView(this,"div",this.POSITION(0));
+var contentView = new LinearLayout(this,"div",this.POSITION(0));
+var toolbar = new Toolbar(this), lo = "http://search.myarea24.de/photos/logi.png", gm ="https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon5.ico";
+
+for(var o=0;o<8;o++){
+var tab = new toolbar.Tab();
+tab._setLogo("https://static.xx.fbcdn.net/rsrc.php/yl/r/H3nktOa7ZMg.ico");
+
+var view = new ListView(this,"ul",this.POSITION(1));
+view._setListViewItemsId("io");
+//view._setOnItemClickListener(new class extends AdapterView.OnItemClickListener{ _onItemClick(v,p){ console.log(p);}});
+var ad = new ArrayAdapter(this,["Kheri","Khalil","Facebook","Twitter","YouTube","Telegram"]);
+view._setAdapter(ad);
+
+tab._setSubListView(view);
+toolbar._addTab(tab);
+}
+
+var mi = new MenuIcon(this, MenuIcon.FORM_3L);
+mi._setOnClickListener(function(ed, evt){ });
+toolbar._setMenuIcon(mi);
+toolbar._setSearchView(sv, LOCATION.TOP);
+contentView._addView(toolbar);
+this._setContentView(contentView, function(){
+
+
+sv._setOnQueryChangeListener(new class extends OnChangeValueListener{
+_onSubmit(er){ console.log(er); }
+_onChangeQuery(q, leng, char){ console.log(View.OnMotionEventListener); }
+});
+
+});
+}
+}
+};
+
+
+</script>
+

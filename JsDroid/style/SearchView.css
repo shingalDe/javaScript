@@ -1,0 +1,3 @@
+input[type="search"]:focus:placeholder-shown, input[type="search"]:hover:placeholder-shown, input[type="search"]:not(:placeholder-shown){ width: 320px; }
+input[type="search"]{ border-radius:5px; width:25px;padding:10px;transition: width 0.2s;-webkit-transition: width 0.2s;-moz-transition: width 0.2s;-o-transition: width 0.2s;-ms-transition: width 0.2s;} #search_win{position:absolute; right:25%; z-index:55px;}
+#search_win li{list-style:none;display:inline-block;}

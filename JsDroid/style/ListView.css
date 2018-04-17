@@ -1,0 +1,47 @@
+*{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+  -webkit-touch-callout: none;
+}
+.shingal_ListVie, .shingal_ListView li.LVItem, .shingal_ListView li.LVItem span{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+  -webkit-touch-callout: none;
+}
+span:hover{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+  -webkit-touch-callout: none;
+color:yellow;
+}
+.shingal_ListView{
+  position: relative;
+  padding: 0;margin: 0;
+}
+.shingal_ListView:hover{ }
+.shingal_ListView li.LVItem{
+  display: block;
+}
+.shingal_ListView li.LVItem:hover{
+  background: green;
+}
+.shingal_ListView .LV_HeaderView{
+  position: fixed;
+  top:0;left: 0;right: 0;
+  padding: 5px;
+}
+.shingal_ListView .LV_ContentView{
+  
+}
+
+.shingal_ListView .LV_FooterView{
+  position: fixed;
+  bottom:0;left: 0;right: 0;
+  padding: 5px; 
+}
